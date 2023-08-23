@@ -1,0 +1,290 @@
+/*reset*/
+body, html, div, ol, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, footer, header, menu, nav, section, article, input, select, form {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 320px) and (max-width: 349px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 399px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+body {
+  font: .6rem/1.5 "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "å¾®è½¯é›…é»‘", Arial, sans-serif;
+  color: #ee7203;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul li {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+iframe, img {
+  border: 0;
+}
+
+a {
+  color: #ee7203;
+  text-decoration: none;
+}
+
+/*ç®­å¤´*/
+.fadeDownUp {
+  -webkit-animation: 1.5s fadeDownUp ease-in-out infinite;
+  animation: 1.5s fadeDownUp ease-in-out infinite;
+}
+
+@-webkit-keyframes fadeDownUp {
+  50% {
+    opacity: .6;
+    -webkit-transform: translate(0, 6px);
+  }
+}
+
+@-webkit-keyframes fadeRound {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.fadeRound {
+  -webkit-animation: 3s fadeRound linear infinite;
+  animation: 3s fadeRound linear infinite;
+}
+
+.twinkle {
+  -webkit-animation: 2s twinkle linear infinite;
+}
+
+@-webkit-keyframes twinkle {
+  50% {
+    -webkit-transform: scale(1.1);
+    opacity: .7;
+  }
+}
+
+.d-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.flex-fill {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.d-vertical {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.d-contain img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.flexpage {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.animated {
+  -webkit-animation-play-state: paused;
+}
+
+.is-active .animated {
+  -webkit-animation-play-state: running;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loading {
+  text-align: center;
+  z-index: 100;
+}
+
+.mid {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.load-box .holder {
+  width: 2rem;
+  height: 2rem;
+  border: 2px dotted #ee7203;
+  border-radius: 100%;
+  -webkit-animation: fadeRound 2s linear infinite;
+}
+
+.load-box .progress {
+  color: #ee7203;
+  font-size: .5rem;
+}
+
+.ico-video {
+  position: fixed;
+  right: .5rem;
+  top: .5rem;
+  z-index: 30;
+  width: 1rem;
+  height: 1rem;
+  background: url(../images/video.png) center center no-repeat;
+  background-size: contain;
+}
+
+.ico-video.close {
+  -webkit-animation: none;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.swipe-tip {
+  width: 8%;
+  height: 3%;
+  z-index: 100;
+  margin: 0 0 0 -4%;
+  position: fixed;
+  left: 50%;
+  bottom: 3%;
+  background: url("../images/arrow.png") center center no-repeat;
+  background-size: contain;
+  display: none;
+}
+
+.swipe-tip.fadeDownUp {
+  display: block;
+}
+
+.scroll-box {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.img-box {
+  position: relative;
+}
+
+@-webkit-keyframes heightIn {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.heightIn {
+  -webkit-animation-name: heightIn;
+}
+
+.area1 .p1 {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/p1_bg.png")  no-repeat;
+  background-size: 100% 100%;
+}
+
+.area1 .p1 .title {
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+}
+
+.area1 .left {
+  width: 65%;
+  float: left;
+}
+.area1 .right {
+  width: 65%;
+  float: right;
+}
+
+.area1 .tips {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  width: 35%;
+}
