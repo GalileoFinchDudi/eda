@@ -284,7 +284,12 @@ img {
 
 .area1 .tips {
   position: absolute;
-  top: 35%;
+  top: 23%;
   right: 0;
   width: 35%;
+}
+
+.area1 .tip {
+  width: 80%;
+  padding-top: 8%;
 }
