@@ -10,6 +10,7 @@
     <meta content="telephone=no" name="format-detection" />
     <link href="./css/animate2.min.css" rel="stylesheet" />
     <link href="./css/index.css?v=7" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   </head>
   <body>
     <div class="full loading" id="loading">
@@ -68,41 +69,83 @@
               style="width: 90%; margin-top: 7%"
               src="./images/p2_title.png"
             />
-            <div class="show-box">
-              <img
-                style="width: 90%; margin-left: 4%"
-                class="show fadeIn animated"
-                src="./images/p2_1.png"
-                data-duration="2"
-              />
-              <div
-                style="position: relative"
-                class="fadeIn animated"
-                data-delay="2"
-              >
-                <img
-                  style="width: 65%; margin-top: 14%; margin-left: 17%"
-                  class="show fadeIn animated"
-                  src="./images/p2_2.png"
-                />
+            <div class="swiper" style="width: 90%">
+              <div class="swiper-wrapper">
+                <div class="show-box swiper-slide">
+                  <img
+                    style="width: 90%; margin-left: 4%"
+                    class="show fadeIn animated"
+                    src="./images/p2_1.png"
+                    data-duration="2"
+                  />
+                  <div
+                    style="position: relative"
+                    class="fadeIn animated"
+                    data-delay="2"
+                  >
+                    <img
+                      style="width: 65%; margin-top: 14%; margin-left: 17%"
+                      class="show fadeIn animated"
+                      src="./images/p2_2.png"
+                    />
 
-                <img
-                  style="
-                    width: 4.5%;
-                    position: absolute;
-                    right: 37.2%;
-                    top: 43%;
-                  "
-                  class="show slideInUp animated infinite"
-                  src="./images/p2_3.png"
-                />
+                    <img
+                      style="
+                        width: 4.5%;
+                        position: absolute;
+                        right: 37.2%;
+                        top: 43%;
+                      "
+                      class="show slideInUp animated infinite"
+                      src="./images/p2_3.png"
+                    />
+                  </div>
+                  <img
+                    style="width: 90%; margin-left: 4%; margin-top: 8%"
+                    class="show fadeIn animated"
+                    data-delay="4"
+                    src="./images/p2_4.png"
+                  />
+                </div>
+                <div class="show-box swiper-slide">
+                  <img
+                    style="width: 90%; margin-left: 4%"
+                    class="show fadeIn animated"
+                    src="./images/p2_1.png"
+                    data-duration="2"
+                  />
+                  <div
+                    style="position: relative"
+                    class="fadeIn animated"
+                    data-delay="2"
+                  >
+                    <img
+                      style="width: 65%; margin-top: 14%; margin-left: 17%"
+                      class="show fadeIn animated"
+                      src="./images/p2_2.png"
+                    />
+
+                    <img
+                      style="
+                        width: 4.5%;
+                        position: absolute;
+                        right: 37.2%;
+                        top: 43%;
+                      "
+                      class="show slideInUp animated infinite"
+                      src="./images/p2_3.png"
+                    />
+                  </div>
+                  <img
+                    style="width: 90%; margin-left: 4%; margin-top: 8%"
+                    class="show fadeIn animated"
+                    data-delay="4"
+                    src="./images/p2_4.png"
+                  />
+                </div>
               </div>
-              <img
-                style="width: 90%; margin-left: 4%; margin-top: 8%"
-                class="show fadeIn animated"
-                data-delay="4"
-                src="./images/p2_4.png"
-              />
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -115,6 +158,7 @@
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/preloadjs-0.6.2.min.js"></script>
     <script src="./js/scrollama.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js?v=8"></script>
   </body>
 </html>
