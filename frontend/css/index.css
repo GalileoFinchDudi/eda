@@ -259,6 +259,10 @@ img {
   -webkit-animation-name: heightIn;
 }
 
+.area1{
+  position: relative;
+}
+
 .area1 .p1 {
   height: 100vh;
   width: 100%;
@@ -292,4 +296,66 @@ img {
 .area1 .tip {
   width: 80%;
   padding-top: 8%;
+}
+
+.area1 .leftCloud {
+  position: absolute;
+  width: 12%;
+  top: 48%;
+  left: 2%;
+}
+
+.area1 .rightCloud {
+  position: absolute;
+  width: 8%;
+  top: 49.5%;
+  right: 3%;
+}
+
+.area1 .sun {
+  position: absolute;
+  width: 8%;
+  top: 55.5%;
+  right: 10%;
+}
+
+.area1 .v {
+  position: absolute;
+  width: 12%;
+  top: 47.5%;
+  right: 11%;
+}
+
+.area1 .home {
+  position: absolute;
+  width: 33%;
+  top: 70.5%;
+  left: 0;
+}
+
+.down-arrow{
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  left: 45%;
+}
+
+.area2 {
+  height: 100vh;
+  background: url("../images/all_bg.png")  no-repeat;
+  background-size: 100% 100%;
+}
+
+.p-box {
+  padding-top: 5%;
+}
+
+.p-box .show-box{
+  height: 68vh;
+  background: url(../images/main_bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 4%;
+  padding-top: 7%;
 }
